@@ -1,0 +1,13 @@
+common: &common
+  adapter: postgresql
+  username: username
+  password: password # from psql setup, see Postgresql  
+  host: localhost
+
+development:
+  <<: *common
+  database: poker_development
+
+production:
+  <<: *common
+  database: poker_production
