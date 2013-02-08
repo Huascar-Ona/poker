@@ -1,3 +1,10 @@
 class Poker.Controller
   start: ->
-    alert 'Que comience el juego'
+    player_id = $('meta[name="player_id"]').attr('content')
+    player = new Poker.Models.Player(id: player_id)
+
+    if player.isNew()
+      username = prompt('Username:')
+      player.save(username: username)
+    else
+      player.fetch()
