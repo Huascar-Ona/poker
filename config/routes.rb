@@ -13,6 +13,7 @@ Poker::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resource :table
+  resources :players
   # Sample resource route with options:
   #   resources :products do
   #     member do
