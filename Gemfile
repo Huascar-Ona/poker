@@ -39,3 +39,4 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'backbone-on-rails'
+gem 'haml-rails'
