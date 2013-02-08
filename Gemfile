@@ -39,4 +39,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'backbone-on-rails'
+gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
