@@ -7,4 +7,9 @@
     = csrf_meta_tags
     %meta{:content => session[:player_id], :name => "player_id"}
   %body
-    = yield
+    .container
+      .row
+        .span3#left
+        .span6#main
+          =yield
+        .span3#right
