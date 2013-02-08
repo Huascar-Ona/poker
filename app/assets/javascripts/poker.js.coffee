@@ -5,6 +5,9 @@ Poker.Collections = {}
 Poker.Views = {}
 Poker.Routers = {}
 
+Poker.addRegions
+  leftRegion: '#left'
+
 Poker.on 'initialize:after', ->
   Backbone.history.start()
   Poker.Models.Player.load()
