@@ -5,8 +5,8 @@ Poker.Collections = {}
 Poker.Views = {}
 Poker.Routers = {}
 
-Poker.addInitializer ->
-  alert 'It works'
+Poker.on 'initialize:after', ->
+  Backbone.history.start()
 
-$(document).ready ->
-  Poker.start()
+Poker.addInitializer ->
+  new Poker.Router(controller: new Poker.Controller)
