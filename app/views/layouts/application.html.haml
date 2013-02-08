@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Poker
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %meta{:content => session[:player_id], :name => "player_id"}
+  %body
+    = yield
